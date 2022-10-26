@@ -117,9 +117,17 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">3</span>
           <span class="site-state-item-name">posts</span>
         </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">categories</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">tags</span>
       </div>
   </nav>
 </div>
@@ -147,6 +155,105 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://orange23333.github.io/2022/10/26/C%E8%AF%AD%E8%A8%80%E2%80%94%E2%80%94%E8%BF%90%E7%AE%97%E7%AC%A6%E4%BC%98%E5%85%88%E7%BA%A7%E5%8F%A3%E8%AF%80/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Orange 233">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="橘皮咖啡馆">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | 橘皮咖啡馆">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2022/10/26/C%E8%AF%AD%E8%A8%80%E2%80%94%E2%80%94%E8%BF%90%E7%AE%97%E7%AC%A6%E4%BC%98%E5%85%88%E7%BA%A7%E5%8F%A3%E8%AF%80/" class="post-title-link" itemprop="url">C语言——运算符优先级口诀</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2022-10-26 18:10:36 / Modified: 19:11:12" itemprop="dateCreated datePublished" datetime="2022-10-26T18:10:36+08:00">2022-10-26</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/C%E8%AF%AD%E8%A8%80%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E5%85%A5%E5%9D%91/" itemprop="url" rel="index"><span itemprop="name">C语言从入门到入坑</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>（这个口诀是我们兴趣班老师想出来的。）</p>
+<h1 id="口诀内容"><a href="#口诀内容" class="headerlink" title="口诀内容"></a>口诀内容</h1><p><em>（优先级自上而下递减；由逗号分隔的，优先级自左到右递减。）</em></p>
+<p>圆方括号，箭头句号。</p>
+<p>单目增减非反负，针强址长，从右。</p>
+<p>乘除求模，加减，位移，大小，等不等。</p>
+<p>位与异或，逻辑与或。</p>
+<p>条件赋值均右。</p>
+<p>真逗。</p>
+<h1 id="解释"><a href="#解释" class="headerlink" title="解释"></a>解释</h1><p>（<em>斜体字</em>是补全；<strong>加粗字</strong>是对整行的说明；<code>代码块</code>即是所对应操作符。）</p>
+<p>圆<em>括号</em><code>()</code> 方括号<code>[]</code></p>
+<p>箭头<code>-&gt;</code> 句号<code>.</code></p>
+<p><strong>单目<em>运算符</em></strong> <em>自</em>增<code>++</code> <em>自</em>减<code>--</code> 非<code>!</code> <em>取</em>反<code>~</code> 负<em>号</em><code>-</code> <em>指</em>针<code>*</code> 强<em>制转换</em><code>(类型)</code> <em>取</em>址<code>&amp;</code> <em>长</em><code>sizeof()</code> <strong>从右<em>结合</em></strong></p>
+<p>乘<code>*</code> 除<code>/</code> 求模<code>%</code></p>
+<p>加<code>+</code> 减<code>-</code></p>
+<p>位移<code>&lt;&lt; &gt;&gt;</code></p>
+<p>大小<code>&gt; &lt; &gt;= &lt;=</code></p>
+<p>等<code>==</code> 不等<code>!=</code></p>
+<p>位与<code>&amp;</code> 异<code>^</code> 或<code>|</code></p>
+<p>逻辑与<code>&amp;&amp;</code> 或<code>||</code></p>
+<p>条件<code>?:</code> 赋值<code>= += -= *= /= %= &amp;= ^= |= &lt;&lt;= &gt;&gt;=</code> <strong>均从右<em>结合</em></strong></p>
+<p>真逗<em>号</em><code>,</code></p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
