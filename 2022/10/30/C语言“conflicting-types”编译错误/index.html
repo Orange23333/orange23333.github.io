@@ -28,7 +28,7 @@
 <meta property="og:description" content="快速解答：啊，看来你也遇到了“conflicting types”——类型冲突编译错误。 如果你不是遇到：  循环引用而没有用宏定义来解决。  声明或定义在调用后面。  声明和定义冲突。  .h.gch未更新。   那么我想告诉你，你可跟我一样忘了C语言不支持“函数重载”，即你的函数名不能重复。 所以不是你的类型声明（typedef）冲突了，而是函数名冲突了。 报错记录12345678910$ m">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2022-10-30T00:43:43.000Z">
-<meta property="article:modified_time" content="2022-10-30T00:58:35.735Z">
+<meta property="article:modified_time" content="2022-10-30T01:01:46.916Z">
 <meta property="article:author" content="Orange 233">
 <meta property="article:tag" content="C">
 <meta property="article:tag" content="编译错误">
@@ -213,7 +213,7 @@
       <span class="post-meta-item-text">Posted on</span>
       
 
-      <time title="Created: 2022-10-30 08:43:43 / Modified: 08:58:35" itemprop="dateCreated datePublished" datetime="2022-10-30T08:43:43+08:00">2022-10-30</time>
+      <time title="Created: 2022-10-30 08:43:43 / Modified: 09:01:46" itemprop="dateCreated datePublished" datetime="2022-10-30T08:43:43+08:00">2022-10-30</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -253,6 +253,7 @@
 
 <p><code>-std=c99</code>这个参数是我后加上去。我注意到<code>stdbool.h</code>中<code>bool</code>最终指向<code>_Bool</code>，一想<code>C</code>语言之前好像没这个东西，就查了一下，是<code>C99</code>标准中才支持的，所以就加上了，但是错误并不是在这里。</p>
 <p>我甚至多次注意到他说的类型冲突所指向的是函数名，甚至有一次开始想“好像C语言是不是不支持函数重名？”，但是直接否定了，然后兜了一圈回来，才查了一下。这才确定了我<code>C</code>语言白学了啊。</p>
+<p>最近好几个<code>C</code>语言项目编译不通过大概就是因为这个。</p>
 
     </div>
 
