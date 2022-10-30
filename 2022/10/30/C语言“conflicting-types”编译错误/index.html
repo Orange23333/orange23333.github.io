@@ -20,28 +20,29 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"orange23333.github.io","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.13.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+    <meta name="description" content="快速解答：啊，看来你也遇到了“conflicting types”——类型冲突编译错误。 如果你不是遇到：  循环引用而没有用宏定义来解决。  声明或定义在调用后面。  声明和定义冲突。  .h.gch未更新。   那么我想告诉你，你可跟我一样忘了C语言不支持“函数重载”，即你的函数名不能重复。 所以不是你的类型声明（typedef）冲突了，而是函数名冲突了。 报错记录12345678910$ m">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="https://orange23333.github.io/2022/10/26/hello-world/index.html">
+<meta property="og:title" content="C语言“conflicting types”编译错误">
+<meta property="og:url" content="https://orange23333.github.io/2022/10/30/C%E8%AF%AD%E8%A8%80%E2%80%9Cconflicting-types%E2%80%9D%E7%BC%96%E8%AF%91%E9%94%99%E8%AF%AF/index.html">
 <meta property="og:site_name" content="橘皮咖啡馆">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="快速解答：啊，看来你也遇到了“conflicting types”——类型冲突编译错误。 如果你不是遇到：  循环引用而没有用宏定义来解决。  声明或定义在调用后面。  声明和定义冲突。  .h.gch未更新。   那么我想告诉你，你可跟我一样忘了C语言不支持“函数重载”，即你的函数名不能重复。 所以不是你的类型声明（typedef）冲突了，而是函数名冲突了。 报错记录12345678910$ m">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2022-10-25T18:06:35.000Z">
-<meta property="article:modified_time" content="2022-10-26T15:22:37.243Z">
+<meta property="article:published_time" content="2022-10-30T00:43:43.000Z">
+<meta property="article:modified_time" content="2022-10-30T00:58:35.735Z">
 <meta property="article:author" content="Orange 233">
-<meta property="article:tag" content="Blob">
+<meta property="article:tag" content="C">
+<meta property="article:tag" content="编译错误">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="https://orange23333.github.io/2022/10/26/hello-world/">
+<link rel="canonical" href="https://orange23333.github.io/2022/10/30/C%E8%AF%AD%E8%A8%80%E2%80%9Cconflicting-types%E2%80%9D%E7%BC%96%E8%AF%91%E9%94%99%E8%AF%AF/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://orange23333.github.io/2022/10/26/hello-world/","path":"2022/10/26/hello-world/","title":"Hello World"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://orange23333.github.io/2022/10/30/C%E8%AF%AD%E8%A8%80%E2%80%9Cconflicting-types%E2%80%9D%E7%BC%96%E8%AF%91%E9%94%99%E8%AF%AF/","path":"2022/10/30/C语言“conflicting-types”编译错误/","title":"C语言“conflicting types”编译错误"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>Hello World | 橘皮咖啡馆</title>
+<title>C语言“conflicting types”编译错误 | 橘皮咖啡馆</title>
   
 
 
@@ -110,7 +111,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%BF%AB%E9%80%9F%E8%A7%A3%E7%AD%94%EF%BC%9A"><span class="nav-number">1.</span> <span class="nav-text">快速解答：</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%8A%A5%E9%94%99%E8%AE%B0%E5%BD%95"><span class="nav-number">2.</span> <span class="nav-text">报错记录</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -182,7 +183,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://orange23333.github.io/2022/10/26/hello-world/">
+    <link itemprop="mainEntityOfPage" href="https://orange23333.github.io/2022/10/30/C%E8%AF%AD%E8%A8%80%E2%80%9Cconflicting-types%E2%80%9D%E7%BC%96%E8%AF%91%E9%94%99%E8%AF%AF/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -195,12 +196,12 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="Hello World | 橘皮咖啡馆">
+      <meta itemprop="name" content="C语言“conflicting types”编译错误 | 橘皮咖啡馆">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Hello World
+          C语言“conflicting types”编译错误
         </h1>
 
         <div class="post-meta-container">
@@ -212,7 +213,7 @@
       <span class="post-meta-item-text">Posted on</span>
       
 
-      <time title="Created: 2022-10-26 02:06:35 / Modified: 23:22:37" itemprop="dateCreated datePublished" datetime="2022-10-26T02:06:35+08:00">2022-10-26</time>
+      <time title="Created: 2022-10-30 08:43:43 / Modified: 08:58:35" itemprop="dateCreated datePublished" datetime="2022-10-30T08:43:43+08:00">2022-10-30</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -220,7 +221,7 @@
       </span>
       <span class="post-meta-item-text">In</span>
         <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E6%9D%82%E7%89%A9%E5%A0%86/" itemprop="url" rel="index"><span itemprop="name">杂物堆</span></a>
+          <a href="/categories/C%E8%AF%AD%E8%A8%80%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E5%85%A5%E5%9D%91/" itemprop="url" rel="index"><span itemprop="name">C语言从入门到入坑</span></a>
         </span>
     </span>
 
@@ -234,19 +235,24 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+        <h1 id="快速解答："><a href="#快速解答：" class="headerlink" title="快速解答："></a>快速解答：</h1><p>啊，看来你也遇到了“conflicting types”——类型冲突编译错误。</p>
+<p>如果你不是遇到：</p>
+<ul>
+<li><p>循环引用而没有用宏定义来解决。</p>
+</li>
+<li><p>声明或定义在调用后面。</p>
+</li>
+<li><p>声明和定义冲突。</p>
+</li>
+<li><p><code>.h.gch</code>未更新。</p>
+</li>
+</ul>
+<p>那么我想告诉你，你可跟我一样忘了<code>C</code>语言不支持“函数重载”，即你的函数名不能重复。</p>
+<p>所以不是你的类型声明（<code>typedef</code>）冲突了，而是函数名冲突了。</p>
+<h1 id="报错记录"><a href="#报错记录" class="headerlink" title="报错记录"></a>报错记录</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">$ mingw32-make.exe test-program</span><br><span class="line">gcc -finput-charset=UTF-8 -std=c99  -c test_main.c -o test_main.o</span><br><span class="line">In file included from test_main.c:3:</span><br><span class="line">ctzidn.h:98:6: error: conflicting types <span class="keyword">for</span> <span class="string">&#x27;IsNullCId&#x27;</span>; have <span class="string">&#x27;_Bool(const Citiz</span></span><br><span class="line"><span class="string">   98 | bool IsNullCId(const CitizenIdZip1 cid);</span></span><br><span class="line"><span class="string">      |      ^~~~~~~~~</span></span><br><span class="line"><span class="string">ctzidn.h:97:6: note: previous declaration of &#x27;</span>IsNullCId<span class="string">&#x27; with type &#x27;</span>_Bool(const</span><br><span class="line">   97 | bool IsNullCId(const CitizenId* const cid);</span><br><span class="line">      |      ^~~~~~~~~</span><br><span class="line">mingw32-make: *** [makefile:62: test_main.o] Error 1</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<p><code>-std=c99</code>这个参数是我后加上去。我注意到<code>stdbool.h</code>中<code>bool</code>最终指向<code>_Bool</code>，一想<code>C</code>语言之前好像没这个东西，就查了一下，是<code>C99</code>标准中才支持的，所以就加上了，但是错误并不是在这里。</p>
+<p>我甚至多次注意到他说的类型冲突所指向的是函数名，甚至有一次开始想“好像C语言是不是不支持函数重名？”，但是直接否定了，然后兜了一圈回来，才查了一下。这才确定了我<code>C</code>语言白学了啊。</p>
 
     </div>
 
@@ -264,7 +270,7 @@
   </li>
   <li class="post-copyright-link">
       <strong>Post link: </strong>
-      <a href="https://orange23333.github.io/2022/10/26/hello-world/" title="Hello World">https://orange23333.github.io/2022/10/26/hello-world/</a>
+      <a href="https://orange23333.github.io/2022/10/30/C%E8%AF%AD%E8%A8%80%E2%80%9Cconflicting-types%E2%80%9D%E7%BC%96%E8%AF%91%E9%94%99%E8%AF%AF/" title="C语言“conflicting types”编译错误">https://orange23333.github.io/2022/10/30/C语言“conflicting-types”编译错误/</a>
   </li>
   <li class="post-copyright-license">
     <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/zh-CN" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> unless stating additionally.
@@ -273,18 +279,19 @@
 </div>
 
           <div class="post-tags">
-              <a href="/tags/Blob/" rel="tag"># Blob</a>
+              <a href="/tags/C/" rel="tag"># C</a>
+              <a href="/tags/%E7%BC%96%E8%AF%91%E9%94%99%E8%AF%AF/" rel="tag"># 编译错误</a>
           </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-item">
+                <a href="/2022/10/26/C%E8%AF%AD%E8%A8%80%E2%80%94%E2%80%94%E8%BF%90%E7%AE%97%E7%AC%A6%E4%BC%98%E5%85%88%E7%BA%A7%E5%8F%A3%E8%AF%80/" rel="prev" title="C语言——运算符优先级口诀">
+                  <i class="fa fa-chevron-left"></i> C语言——运算符优先级口诀
+                </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2022/10/26/%E6%AC%A2%E8%BF%8E%E5%85%89%E4%B8%B4%E6%A9%98%E7%9A%AE%E5%92%96%E5%95%A1%E9%A6%86%EF%BC%81/" rel="next" title="欢迎光临橘皮咖啡馆！">
-                  欢迎光临橘皮咖啡馆！ <i class="fa fa-chevron-right"></i>
-                </a>
             </div>
           </div>
     </footer>
